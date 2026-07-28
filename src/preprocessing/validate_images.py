@@ -111,7 +111,9 @@ print(f"Existing     : {report['exists'].sum()}")
 
 print(f"Readable     : {report['valid'].sum()}")
 
-print(f"Corrupted    : {~report['valid'].sum()}")
+corrupted = len(report) - report["valid"].sum()
+
+print(f"Corrupted    : {corrupted}")
 
 print(f"\nSaved Report : {OUTPUT_REPORT}")
 
