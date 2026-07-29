@@ -52,7 +52,7 @@ EXPERIMENT_DIR.mkdir(exist_ok=True)
 # DATASET FILES
 # ============================================================
 
-DATASET_CSV = PROCESSED_DATA_DIR / "mammogram_dataset_with_folds.csv"
+DATASET_CSV = PROCESSED_DATA_DIR / "training_dataset.csv"
 
 # ============================================================
 # IMAGE SETTINGS
